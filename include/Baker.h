@@ -15,9 +15,6 @@ class Baker
         Bakery *bakery;
 
     public:
-        //Item 4: Make sure that objects are initialized before they’re used
-        //constructorul primeste toate valorile necesare pentru a initializa variabilele membre si le seteaza folosind atribuirea
-        //astfel toate obiectele create sunt initializate inainte de a fi utilizate
         Baker(const std::string &bakerName, int yearsExperience, const std::vector<std::string> &bakerSpecialties, 
                 const std::string &helperName, Bakery *bakeryPtr)
         {
@@ -64,7 +61,7 @@ class Baker
             }
 
             std::cout<<"\n";
-            
+
             helper->displayHelper();
         }
 };
